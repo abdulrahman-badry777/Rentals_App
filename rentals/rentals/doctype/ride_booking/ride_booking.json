@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-10 19:04:23.701388",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_34gn",
+  "veichle",
+  "order",
+  "amended_from",
+  "column_break_kjox",
+  "driver",
+  "still_editable",
+  "section_break_wmbr",
+  "items",
+  "section_break_zdsw",
+  "rate",
+  "column_break_ebhg",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_34gn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Link",
+   "label": "Order",
+   "options": "Ride Order"
+  },
+  {
+   "fieldname": "column_break_kjox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "still_editable",
+   "fieldtype": "Data",
+   "label": "Still editable"
+  },
+  {
+   "fieldname": "section_break_zdsw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "items",
+   "options": "Ride Booking Item"
+  },
+  {
+   "fieldname": "section_break_wmbr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "column_break_ebhg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "order.veichle",
+   "fieldname": "veichle",
+   "fieldtype": "Link",
+   "label": "Veichle",
+   "options": "Veichle",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-10 20:03:47.490842",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Ride Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,7 @@
+{% extends "templates/web.html" %}
+{% block page_content %}
+{% set user = frappe.session.user%}
+<h2>the user now is :{{user}}</h2>
+<h1>hi</h1>
+<h3>{{my_sec}}</h3>
+{% endblock%}

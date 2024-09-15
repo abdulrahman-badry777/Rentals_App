@@ -1,2 +1,7 @@
-# Rentals_App
-Frappe app
+## Rentals
+
+manage Rentals in frappe
+
+#### License
+
+mit

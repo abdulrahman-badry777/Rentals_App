@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-09-10 12:59:54.855841",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "make",
+  "year",
+  "color",
+  "inusurance_expirty",
+  "testing_html",
+  "my_summary",
+  "column_break_oesl",
+  "audit_completed",
+  "model",
+  "linces_plate",
+  "read_only_woks",
+  "published",
+  "route",
+  "status",
+  "condition"
+ ],
+ "fields": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Make",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "column_break_oesl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linces_plate",
+   "fieldtype": "Data",
+   "label": "Linces Plate"
+  },
+  {
+   "fieldname": "read_only_woks",
+   "fieldtype": "Read Only",
+   "label": "Read Only Woks"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "inusurance_expirty",
+   "fieldtype": "Date",
+   "label": "Inusurance Expirty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOut Of Service\nSold\nCurshed"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Rating",
+   "label": "Condition"
+  },
+  {
+   "fieldname": "testing_html",
+   "fieldtype": "HTML",
+   "label": "Testing HTML"
+  },
+  {
+   "fieldname": "my_summary",
+   "fieldtype": "Button",
+   "label": "My Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "audit_completed",
+   "fieldtype": "Check",
+   "label": "Audit Completed?",
+   "permlevel": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-09-15 09:34:18.923458",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Veichle",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Veichle Manager",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Veichle Auditer",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Veichle Auditer",
+   "share": 1
+  }
+ ],
+ "route": "cars",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}
